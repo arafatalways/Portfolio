@@ -18,32 +18,48 @@ function Navbar() {
               alt="Logo"
               className="w-[50px] h-[40px] rounded-lg border-2 border-gray-500"
             />
-            
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-7 text-[18px] font-semibold">
-            <Link to="/" className="hover:text-[#8ec5ff] transition-colors duration-300">
+            <Link
+              to="/"
+              className="hover:text-[#8ec5ff] transition-colors duration-300"
+            >
               Home
             </Link>
-            <Link to="/about" className="hover:text-[#8ec5ff] transition-colors duration-300">
+            <Link
+              to="/about"
+              className="hover:text-[#8ec5ff] transition-colors duration-300"
+            >
               About
             </Link>
-            <Link to="/skills" className="hover:text-[#8ec5ff] transition-colors duration-300">
+            <Link
+              to="/skills"
+              className="hover:text-[#8ec5ff] transition-colors duration-300"
+            >
               Skills
             </Link>
-            <Link to="/projects" className="hover:text-[#8ec5ff] transition-colors duration-300">
+            <Link
+              to="/projects"
+              className="hover:text-[#8ec5ff] transition-colors duration-300"
+            >
               Projects
             </Link>
           </div>
 
           {/* Buttons */}
           <div className="flex items-center gap-4">
-            <Button variant="outline" className="hidden sm:inline-flex text-black dark:text-white">
+            <Button
+              variant="outline"
+              className="hidden sm:inline-flex text-black dark:text-white"
+            >
               <Link to="/log-in">Contact</Link>
             </Button>
 
-            <span className="dark:text-white text-black"><ModeToggle /></span>
+            <span className="dark:text-white text-black">
+              <ModeToggle />
+            </span>
 
             {/* Mobile Menu Button */}
             <button
@@ -77,18 +93,18 @@ function Navbar() {
               About
             </Link>
             <Link
-              to="/works"
+              to="/skills"
               onClick={() => setIsOpen(false)}
               className="hover:text-[#8ec5ff] transition"
             >
-              Works
+              Skills
             </Link>
             <Link
-              to="/contact"
+              to="/projects"
               onClick={() => setIsOpen(false)}
               className="hover:text-[#8ec5ff] transition"
             >
-              Contact
+              Projects
             </Link>
 
             <Button className="bg-[#8ec5ff] text-white hover:bg-[#6eaaff]">

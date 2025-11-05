@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 function About() {
   return (
     <section className="w-full min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white pt-6 pb-12 px-6 md:px-12 lg:px-24 flex flex-col items-center">
-      
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}
@@ -21,7 +20,6 @@ function About() {
 
       {/* Main Content */}
       <div className="flex flex-col lg:flex-row items-center gap-16 w-full max-w-6xl">
-
         {/* Left Side - Portrait */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -50,18 +48,35 @@ function About() {
           className="w-full lg:w-1/2 flex flex-col gap-6"
         >
           <p className="text-lg sm:text-lg leading-8 text-gray-300">
-            <span className="text-[#12F7D6] font-bold text-2xl block mb-2">Hello! 👋</span>
-            My name is <strong>Yeasin Arafat</strong>, a passionate MERN Stack Web Developer dedicated to building beautiful and functional websites. 
-            I specialize in <span className="text-indigo-400 font-semibold">React, Node.js, Express, MongoDB</span> and modern frontend technologies.
+            <span className="text-[#12F7D6] font-bold text-2xl block mb-2">
+              Hello! 👋
+            </span>
+            My name is <strong>Yeasin Arafat</strong>, a passionate MERN Stack
+            Web Developer dedicated to building beautiful and functional
+            websites. I specialize in{" "}
+            <span className="text-indigo-400 font-semibold">
+              React, Node.js, Express, MongoDB
+            </span>{" "}
+            and modern frontend technologies.
           </p>
 
           <p className="text-gray-300 text-base sm:text-lg leading-7">
-            I love crafting smooth, responsive, and visually appealing web experiences. Always learning, experimenting, and pushing boundaries to create impactful digital products. When I'm not coding, I explore photography and creative projects.
+            I love crafting smooth, responsive, and visually appealing web
+            experiences. Always learning, experimenting, and pushing boundaries
+            to create impactful digital products. When I'm not coding, I explore
+            photography and creative projects.
           </p>
 
           {/* Skill Cards */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
-            {["React", "Node.js", "Express", "MongoDB", "TailwindCSS", "JavaScript"].map((skill, idx) => (
+            {[
+              "React",
+              "Node.js",
+              "Express",
+              "MongoDB",
+              "TailwindCSS",
+              "JavaScript",
+            ].map((skill, idx) => (
               <motion.div
                 key={idx}
                 whileHover={{ scale: 1.1, rotate: 2 }}

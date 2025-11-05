@@ -14,7 +14,7 @@ export default function PortfolioForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Message Sent Successfully! 🚀");
+    alert("Message Sent Successfully!");
     setFormData({ name: "", email: "", message: "" });
   };
 
