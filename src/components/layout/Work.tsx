@@ -5,28 +5,28 @@ const projects = [
     id: 1,
     title: "Project One",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repellendus et magni eveniet consequatur, nesciunt possimus quo.",
+      "A professional business website frontend made with React and Tailwind CSS. Focused on branding, responsiveness, and an easy-to-navigate user interface.",
     image: "/images/pro-4.jpg",
   },
   {
     id: 2,
     title: "Project Two",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestias, voluptatibus voluptas quis quisquam nulla sapiente consequuntur.",
+      "A fully responsive eCommerce frontend built with React and Tailwind CSS. Includes product listings, categories, cart design, and modern UI animations for better user engagement.",
     image: "/images/pro-5.jpg",
   },
   {
     id: 3,
     title: "Project Three",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet expedita ratione, alias repellendus et magni.",
+      "This is a simple and modern frontend project. It has a clean design, fast performance, and works well on all devices. Built with React, Tailwind CSS, and JavaScript.",
     image: "/images/p-2.png",
   },
   {
     id: 4,
     title: "Project Four",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt possimus quo, laborum molestias, voluptatibus voluptas.",
+      "A responsive and user-friendly frontend project built using modern web technologies like HTML, CSS, JavaScript, React, and Tailwind CSS.",
     image: "/images/p-3.png",
   },
 ];
@@ -81,8 +81,12 @@ function Work() {
               className="w-full h-48 object-cover rounded-[4px]"
             />
             <div className="p-4">
-              <h4 className="text-lg font-bold text-[#8ec5ff] mb-2">{project.title}</h4>
-              <p className="text-gray-300 text-sm leading-6">{project.description}</p>
+              <h4 className="text-lg font-bold text-[#8ec5ff] mb-2">
+                {project.title}
+              </h4>
+              <p className="text-gray-300 text-sm leading-6">
+                {project.description}
+              </p>
             </div>
           </motion.div>
         ))}

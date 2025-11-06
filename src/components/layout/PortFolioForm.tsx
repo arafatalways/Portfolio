@@ -8,7 +8,9 @@ export default function PortfolioForm() {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -36,14 +38,16 @@ export default function PortfolioForm() {
           Get in <span className="text-indigo-400">Touch</span>
         </h2>
         <p className="text-gray-300 text-center mb-10">
-          Have a project idea, collaboration or just want to say hello?  
-          Drop a message below and I’ll get back to you soon! 💬
+          Have a project idea, collaboration or just want to say hello? Drop a
+          message below and I’ll get back to you soon! 💬
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Name */}
           <div>
-            <label className="block mb-2 text-sm font-semibold text-gray-300">Your Name</label>
+            <label className="block mb-2 text-sm font-semibold text-gray-300">
+              Your Name
+            </label>
             <input
               type="text"
               name="name"
@@ -57,7 +61,9 @@ export default function PortfolioForm() {
 
           {/* Email */}
           <div>
-            <label className="block mb-2 text-sm font-semibold text-gray-300">Your Email</label>
+            <label className="block mb-2 text-sm font-semibold text-gray-300">
+              Your Email
+            </label>
             <input
               type="email"
               name="email"
@@ -71,7 +77,9 @@ export default function PortfolioForm() {
 
           {/* Message */}
           <div>
-            <label className="block mb-2 text-sm font-semibold text-gray-300">Message</label>
+            <label className="block mb-2 text-sm font-semibold text-gray-300">
+              Message
+            </label>
             <textarea
               name="message"
               value={formData.message}
@@ -90,7 +98,7 @@ export default function PortfolioForm() {
             type="submit"
             className="w-full bg-gradient-to-r from-indigo-500 to-purple-500 py-3 rounded-xl text-lg font-semibold shadow-lg hover:shadow-indigo-500/40 transition-all duration-300"
           >
-            Send Message 
+            Send Message
           </motion.button>
         </form>
       </motion.div>

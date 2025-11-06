@@ -1,20 +1,74 @@
-
 import { motion } from "framer-motion";
-import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiTailwindcss, SiTypescript, SiJavascript, SiHtml5, SiCss3, SiGit, SiGithub, SiDocker } from "react-icons/si";
+import {
+  SiMongodb,
+  SiExpress,
+  SiReact,
+  SiNodedotjs,
+  SiTailwindcss,
+  SiTypescript,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiGit,
+  SiGithub,
+} from "react-icons/si";
 
 const skills = [
-  { name: "MongoDB", icon: <SiMongodb className="text-green-500 text-4xl" />, level: "Advanced" },
-  { name: "Express.js", icon: <SiExpress className="text-gray-300 text-4xl" />, level: "Intermediate" },
-  { name: "React.js", icon: <SiReact className="text-blue-400 text-4xl" />, level: "Advanced" },
-  { name: "Node.js", icon: <SiNodedotjs className="text-green-400 text-4xl" />, level: "Advanced" },
-  { name: "TypeScript", icon: <SiTypescript className="text-blue-600 text-4xl" />, level: "Intermediate" },
-  { name: "JavaScript", icon: <SiJavascript className="text-yellow-400 text-4xl" />, level: "Advanced" },
-  { name: "HTML5", icon: <SiHtml5 className="text-orange-500 text-4xl" />, level: "Expert" },
-  { name: "CSS3", icon: <SiCss3 className="text-blue-500 text-4xl" />, level: "Expert" },
-  { name: "TailwindCSS", icon: <SiTailwindcss className="text-cyan-400 text-4xl" />, level: "Advanced" },
-  { name: "Git", icon: <SiGit className="text-red-500 text-4xl" />, level: "Advanced" },
-  { name: "GitHub", icon: <SiGithub className="text-gray-300 text-4xl" />, level: "Advanced" },
-  { name: "Docker", icon: <SiDocker className="text-blue-400 text-4xl" />, level: "Intermediate" },
+  {
+    name: "MongoDB",
+    icon: <SiMongodb className="text-green-500 text-4xl" />,
+    level: "Advanced",
+  },
+  {
+    name: "Express.js",
+    icon: <SiExpress className="text-gray-300 text-4xl" />,
+    level: "Intermediate",
+  },
+  {
+    name: "React.js",
+    icon: <SiReact className="text-blue-400 text-4xl" />,
+    level: "Advanced",
+  },
+  {
+    name: "Node.js",
+    icon: <SiNodedotjs className="text-green-400 text-4xl" />,
+    level: "Advanced",
+  },
+  {
+    name: "TypeScript",
+    icon: <SiTypescript className="text-blue-600 text-4xl" />,
+    level: "Intermediate",
+  },
+  {
+    name: "JavaScript",
+    icon: <SiJavascript className="text-yellow-400 text-4xl" />,
+    level: "Advanced",
+  },
+  {
+    name: "HTML5",
+    icon: <SiHtml5 className="text-orange-500 text-4xl" />,
+    level: "Expert",
+  },
+  {
+    name: "CSS3",
+    icon: <SiCss3 className="text-blue-500 text-4xl" />,
+    level: "Expert",
+  },
+  {
+    name: "TailwindCSS",
+    icon: <SiTailwindcss className="text-cyan-400 text-4xl" />,
+    level: "Advanced",
+  },
+  {
+    name: "Git",
+    icon: <SiGit className="text-red-500 text-4xl" />,
+    level: "Advanced",
+  },
+  {
+    name: "GitHub",
+    icon: <SiGithub className="text-gray-300 text-4xl" />,
+    level: "Advanced",
+  },
 ];
 
 export default function MySkills() {
@@ -31,8 +85,13 @@ export default function MySkills() {
           My <span className="text-indigo-400">Skills</span>
         </motion.h2>
         <p className="text-gray-400 max-w-3xl mx-auto mb-14 text-lg">
-          As a <span className="text-green-400 font-semibold">MERN Stack Developer</span>, I have expertise in both frontend and backend technologies, 
-          building powerful, scalable and modern web applications with clean UI and secure backend.
+          As a{" "}
+          <span className="text-green-400 font-semibold">
+            MERN Stack Developer
+          </span>
+          , I have expertise in both frontend and backend technologies, building
+          powerful, scalable and modern web applications with clean UI and
+          secure backend.
         </p>
 
         {/* Skills Grid */}
@@ -53,7 +112,14 @@ export default function MySkills() {
               <div className="mt-3 w-full bg-gray-700 h-2 rounded-full">
                 <motion.div
                   initial={{ width: 0 }}
-                  animate={{ width: skill.level === "Expert" ? "100%" : skill.level === "Advanced" ? "85%" : "70%" }}
+                  animate={{
+                    width:
+                      skill.level === "Expert"
+                        ? "100%"
+                        : skill.level === "Advanced"
+                        ? "85%"
+                        : "70%",
+                  }}
                   transition={{ duration: 1.2 }}
                   className="h-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500"
                 />

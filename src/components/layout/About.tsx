@@ -1,5 +1,5 @@
-import FloatingIcon from "@/components/animation/FloatingIcon";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -15,7 +15,7 @@ function About() {
         <h2 className="text-4xl sm:text-4xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-400 text-center">
           About Me
         </h2>
-        <FloatingIcon />
+        {/* <FloatingIcon /> */}
       </motion.div>
 
       {/* Main Content */}
@@ -51,31 +51,34 @@ function About() {
             <span className="text-[#12F7D6] font-bold text-2xl block mb-2">
               Hello! 👋
             </span>
-            My name is <strong>Yeasin Arafat</strong>, a passionate MERN Stack
-            Web Developer dedicated to building beautiful and functional
-            websites. I specialize in{" "}
+            My name is <strong>Yeasin Arafat</strong>, a passionate Frontend Web
+            Developer dedicated to building beautiful and functional websites. I
+            specialize in{" "}
             <span className="text-indigo-400 font-semibold">
-              React, Node.js, Express, MongoDB
+              HTML, Tailwind CSS, React, Node.js
             </span>{" "}
             and modern frontend technologies.
           </p>
 
           <p className="text-gray-300 text-base sm:text-lg leading-7">
-            I love crafting smooth, responsive, and visually appealing web
-            experiences. Always learning, experimenting, and pushing boundaries
-            to create impactful digital products. When I'm not coding, I explore
-            photography and creative projects.
+            I am a passionate Front-End Developer with a strong foundation in
+            modern web technologies. I enjoy turning ideas into interactive,
+            user-friendly, and visually appealing web applications. My goal is
+            to become a full-stack developer by learning backend technologies
+            like Node.js, express js, next and MongoDB.
           </p>
 
           {/* Skill Cards */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
             {[
+              "HTML",
+              "CSS",
               "React",
               "Node.js",
-              "Express",
-              "MongoDB",
               "TailwindCSS",
               "JavaScript",
+              "GitHub",
+              "git",
             ].map((skill, idx) => (
               <motion.div
                 key={idx}
@@ -94,7 +97,7 @@ function About() {
             whileTap={{ scale: 0.95 }}
             className="mt-8 bg-gradient-to-r from-purple-500 to-pink-500 py-3 px-6 rounded-xl text-lg font-bold shadow-lg hover:shadow-pink-500/50 transition-all duration-300 self-start"
           >
-            Say Hello!
+            <Link to="/contact">Say Hello!</Link>
           </motion.button>
         </motion.div>
       </div>

@@ -2,12 +2,12 @@ import About from "@/components/layout/About";
 import PortfolioForm from "@/components/layout/PortFolioForm";
 
 function AboutPage() {
-    return ( 
+  return (
     <>
-    <About />
-    <PortfolioForm />
+      <About />
+      <PortfolioForm />
     </>
-    );
+  );
 }
 
 export default AboutPage;

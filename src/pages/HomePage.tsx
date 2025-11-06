@@ -5,15 +5,15 @@ import Work from "@/components/layout/Work";
 import MySkills from "@/components/layout/Skills";
 
 function HomePage() {
-    return ( 
-        <>
+  return (
+    <>
       <Hero />
       <About />
       <Work />
       <MySkills />
       <PortfolioForm />
-        </>
-     );
+    </>
+  );
 }
 
 export default HomePage;
