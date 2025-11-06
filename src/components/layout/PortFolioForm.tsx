@@ -21,7 +21,7 @@ export default function PortfolioForm() {
   };
 
   return (
-    <section className=" relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-900 px-6 py-20">
+    <section className=" relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-gray-900 dark:via-black dark:to-gray-900 text-gray-700 dark:text-gray-300 transition-all duration-500 px-6 py-20">
       {/* background glow effect */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -left-40 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
@@ -34,10 +34,10 @@ export default function PortfolioForm() {
         transition={{ duration: 0.8 }}
         className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl shadow-2xl p-10 max-w-2xl w-full text-white"
       >
-        <h2 className="text-4xl font-bold text-center mb-4">
+        <h2 className="text-4xl dark:text-white text-black font-bold text-center mb-4">
           Get in <span className="text-indigo-400">Touch</span>
         </h2>
-        <p className="text-gray-300 text-center mb-10">
+        <p className="dark:text-gray-300 text-black text-center mb-10">
           Have a project idea, collaboration or just want to say hello? Drop a
           message below and I’ll get back to you soon! 💬
         </p>
@@ -45,7 +45,7 @@ export default function PortfolioForm() {
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Name */}
           <div>
-            <label className="block mb-2 text-sm font-semibold text-gray-300">
+            <label className="block mb-2 text-sm font-semibold text-black dark:text-gray-300">
               Your Name
             </label>
             <input
@@ -54,14 +54,14 @@ export default function PortfolioForm() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500"
+              className="w-full bg-white/5 border border-gray-700 dark:border-white/20 rounded-xl px-4 py-3 text-black dark:text-gray-300 focus:outline-none focus:border-indigo-500"
               placeholder="Enter your name"
             />
           </div>
 
           {/* Email */}
           <div>
-            <label className="block mb-2 text-sm font-semibold text-gray-300">
+            <label className="block mb-2 text-sm font-semibold text-black dark:text-gray-300">
               Your Email
             </label>
             <input
@@ -70,14 +70,14 @@ export default function PortfolioForm() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500"
+              className="w-full bg-white/5 border border-gray-700 dark:border-white/20 rounded-xl px-4 py-3 text-black dark:text-gray-300 focus:outline-none focus:border-indigo-500"
               placeholder="Enter your email"
             />
           </div>
 
           {/* Message */}
           <div>
-            <label className="block mb-2 text-sm font-semibold text-gray-300">
+            <label className="block mb-2 text-sm font-semibold text-black dark:text-gray-300">
               Message
             </label>
             <textarea
@@ -86,7 +86,7 @@ export default function PortfolioForm() {
               onChange={handleChange}
               required
               rows={4}
-              className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500"
+              className="w-full bg-white/5 border border-gray-700 dark:border-white/20 rounded-xl px-4 py-3 text-black dark:text-gray-300 focus:outline-none focus:border-indigo-500"
               placeholder="Write your message..."
             ></textarea>
           </div>

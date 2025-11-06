@@ -19,7 +19,7 @@ function Hero() {
     window.open("https://www.linkedin.com/in/yeasin-arafat-02a116372/");
   };
   return (
-    <section className="w-full bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white pt-6 pb-12 px-6 md:px-12 lg:px-20">
+    <section className="w-fullbg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-gray-900 dark:via-black dark:to-gray-900 text-gray-700 dark:text-gray-300 transition-all duration-500 pt-6 pb-12 px-6 md:px-12 lg:px-20">
       {/* Typing Animation Text */}
       <div className="mb-5 text-center">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-indigo-300">
@@ -40,7 +40,7 @@ function Hero() {
             </span>
           </h1>
 
-          <p className="text-white/80 leading-7 text-justify md:text-left mb-8">
+          <p className="dark:text-white/80 leading-7 text-justify md:text-left mb-8">
             A passionate{" "}
             <span className="text-indigo-400 font-semibold">
               Frontend Web Developer

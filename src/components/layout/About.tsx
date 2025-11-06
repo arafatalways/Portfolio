@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <section className="w-full min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white pt-6 pb-12 px-6 md:px-12 lg:px-24 flex flex-col items-center">
+    <section className="w-full min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-gray-900 dark:via-black dark:to-gray-900 text-gray-700 dark:text-gray-300 transition-all duration-500 pt-6 pb-12 px-6 md:px-12 lg:px-24 flex flex-col items-center">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}
@@ -47,7 +47,7 @@ function About() {
           transition={{ duration: 0.9 }}
           className="w-full lg:w-1/2 flex flex-col gap-6"
         >
-          <p className="text-lg sm:text-lg leading-8 text-gray-300">
+          <p className="text-lg sm:text-lg leading-8 text-gray-700">
             <span className="text-[#12F7D6] font-bold text-2xl block mb-2">
               Hello! 👋
             </span>
@@ -60,7 +60,7 @@ function About() {
             and modern frontend technologies.
           </p>
 
-          <p className="text-gray-300 text-base sm:text-lg leading-7">
+          <p className="text-gray-700 text-base sm:text-lg leading-7">
             I am a passionate Front-End Developer with a strong foundation in
             modern web technologies. I enjoy turning ideas into interactive,
             user-friendly, and visually appealing web applications. My goal is

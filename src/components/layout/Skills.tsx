@@ -73,7 +73,7 @@ const skills = [
 
 export default function MySkills() {
   return (
-    <section className="relative bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white pt-6 pb-12 px-6">
+    <section className="relative bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-gray-900 dark:via-black dark:to-gray-900 text-gray-700 dark:text-gray-300 transition-all duration-500 pt-6 pb-12 px-6">
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
         <motion.h2

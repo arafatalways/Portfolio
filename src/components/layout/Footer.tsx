@@ -7,8 +7,8 @@ function Footer() {
   };
   return (
     <>
-      <footer className="bg-white bg-gradient-to-b from-gray-900 via-black to-gray-900">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+      <footer className=" bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-gray-900 dark:via-black dark:to-gray-900 text-gray-700 dark:text-gray-300 transition-all duration-500">
+        <div className="mx-auto container max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="lg:flex lg:items-start lg:gap-8">
             <div className="text-gray-500 dark:text-[#8ec5ff]">
               <svg
@@ -27,7 +27,7 @@ function Footer() {
             <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
               <div className="col-span-2">
                 <div>
-                  <h2 className="text-2xl font-bold text-white">
+                  <h2 className="text-2xl font-bold text-gray-600">
                     Get the latest news!
                   </h2>
 
@@ -45,7 +45,7 @@ function Footer() {
                     Email{" "}
                   </label>
 
-                  <div className="border border-gray-100 rounded-[8px] p-2 focus-within:ring-3 sm:flex sm:items-center sm:gap-4 dark:border-gray-800">
+                  <div className="border border-gray-400 rounded-[8px] p-2 focus-within:ring-3 sm:flex sm:items-center sm:gap-4 dark:border-gray-800">
                     <input
                       type="email"
                       id="UserEmail"

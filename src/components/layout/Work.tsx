@@ -33,7 +33,7 @@ const projects = [
 
 function Work() {
   return (
-    <section className="bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white py-16 px-6 md:px-12 lg:px-20">
+    <section className="bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-gray-900 dark:via-black dark:to-gray-900 text-gray-700 dark:text-gray-300 transition-all duration-500 py-16 px-6 md:px-12 lg:px-20">
       {/* Heading */}
       <motion.h2
         initial={{ opacity: 0, y: -40 }}
@@ -50,7 +50,7 @@ function Work() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.2, duration: 0.8 }}
-        className="text-gray-400 text-center text-lg mb-1"
+        className="text-gray-500 text-center text-lg mb-1"
       >
         Here are some of the projects I've worked on:
       </motion.p>
@@ -59,7 +59,7 @@ function Work() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.4, duration: 0.8 }}
-        className="text-gray-400 text-center text-lg mb-12"
+        className="text-gray-500 text-center text-lg mb-12"
       >
         I take pride in my work and always strive for excellence.
       </motion.p>
