@@ -32,7 +32,7 @@ export default function PortfolioForm() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl shadow-2xl p-10 max-w-2xl w-full text-white"
+        className="relative hover:border-indigo-400 dark:hover:border-primary/40 z-10 bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl shadow-2xl p-10 max-w-2xl w-full text-white"
       >
         <h2 className="text-4xl dark:text-white text-black font-bold text-center mb-4">
           Get in <span className="text-indigo-400">Touch</span>

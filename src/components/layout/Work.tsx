@@ -73,7 +73,7 @@ function Work() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.2, duration: 0.7 }}
-            className="bg-gray-800 rounded-[4px] shadow-lg hover:shadow-cyan-500/50 hover:scale-105 transition-all duration-500 cursor-pointer overflow-hidden"
+            className="bg-gray-800 rounded-[4px] border hover:border-black dark:hover:border-primary/40 shadow-lg hover:shadow-cyan-500/50 hover:scale-105 transition-all duration-500 cursor-pointer overflow-hidden"
           >
             <img
               src={project.image}

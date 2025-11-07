@@ -103,7 +103,7 @@ export default function MySkills() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
               whileHover={{ scale: 1.05, y: -5 }}
-              className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-xl hover:shadow-indigo-500/30"
+              className="bg-white/5 border hover:border-indigo-400 dark:hover:border-primary/40 backdrop-blur-md border-white/10 rounded-2xl p-6 shadow-xl hover:shadow-indigo-500/30"
             >
               <div className="flex justify-center mb-4">{skill.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{skill.name}</h3>
