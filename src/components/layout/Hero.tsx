@@ -7,7 +7,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 function Hero() {
   const goToResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1WrK9ANOD8Q7IJIrXK0mEgNFbV0lpNQnP/view?usp=sharing"
+      "https://drive.google.com/file/d/1gRVk2p8SN7stVNyPgE-wNTZkMPAb7C4M/view?usp=sharing"
     );
   };
   const goToFacebook = () => {
