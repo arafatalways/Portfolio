@@ -8,14 +8,14 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const goToResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1gRVk2p8SN7stVNyPgE-wNTZkMPAb7C4M/view?usp=sharing"
+      "https://drive.google.com/file/d/1j553LebEXvTLP9lzMBAIIO5Ey-TFC-0g/view?usp=sharing"
     );
   };
 
   return (
-    <div className="sticky top-0 z-50">
+    <div className="sticky top-0 z-50 my-container">
       <header className="relative z-20 ">
-        <nav className="bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-gray-900 dark:via-black dark:to-gray-900 text-gray-700 dark:text-gray-300 transition-all duration-500  border dark:border-slate-700/70 rounded-lg px-4 py-3 shadow-md">
+        <nav className="bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-gray-900 dark:via-black dark:to-gray-900 text-gray-700 dark:text-gray-300 transition-all duration-500  border dark:border-slate-700/70 rounded-sm px-4 py-3">
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div className="flex items-center gap-2">

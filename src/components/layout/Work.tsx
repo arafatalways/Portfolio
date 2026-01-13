@@ -33,7 +33,7 @@ const projects = [
 
 function Work() {
   return (
-    <section className="bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-gray-900 dark:via-black dark:to-gray-900 text-gray-700 dark:text-gray-300 transition-all duration-500 py-16 px-6 md:px-12 lg:px-20">
+    <section className="my-container bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-gray-900 dark:via-black dark:to-gray-900 text-gray-700 dark:text-gray-300 transition-all duration-500 py-12">
       {/* Heading */}
       <motion.h2
         initial={{ opacity: 0, y: -40 }}

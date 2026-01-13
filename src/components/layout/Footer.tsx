@@ -7,8 +7,8 @@ function Footer() {
   };
   return (
     <>
-      <footer className=" bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-gray-900 dark:via-black dark:to-gray-900 text-gray-700 dark:text-gray-300 transition-all duration-500">
-        <div className="mx-auto container max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+      <footer className="my-container bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-gray-900 dark:via-black dark:to-gray-900 text-gray-700 dark:text-gray-300 transition-all duration-500">
+        <div className="py-8">
           <div className="lg:flex lg:items-start lg:gap-8">
             <div className="text-gray-500 dark:text-[#8ec5ff]">
               <svg
@@ -53,7 +53,7 @@ function Footer() {
                       className="w-full border-none focus:border-transparent focus:ring-transparent sm:text-sm dark:text-white"
                     />
 
-                    <button className="mt-1 w-full bg-[#8ec5ff] px-6 py-3 text-sm rounded-[8px] font-bold tracking-wide text-white uppercase transition-none hover:bg-gray-400 sm:mt-0 sm:w-auto sm:shrink-0">
+                    <button className="mt-1 w-full bg-gradient-to-r from-indigo-500 to-blue-500 px-6 py-3 text-sm rounded-[8px] font-bold tracking-wide text-white uppercase transition-none hover:bg-gray-400 sm:mt-0 sm:w-auto sm:shrink-0">
                       Sign Up
                     </button>
                   </div>

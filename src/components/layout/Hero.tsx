@@ -7,7 +7,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 function Hero() {
   const goToResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1gRVk2p8SN7stVNyPgE-wNTZkMPAb7C4M/view?usp=sharing"
+      "https://drive.google.com/file/d/1j553LebEXvTLP9lzMBAIIO5Ey-TFC-0g/view?usp=sharing"
     );
   };
   const goToFacebook = () => {
@@ -42,7 +42,7 @@ function Hero() {
   }, [index]);
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-gray-900 dark:via-black dark:to-gray-900 text-gray-700 dark:text-gray-300 transition-all duration-500 pt-10 pb-16 px-6 md:px-12 lg:px-20">
+    <section className="my-container bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-gray-900 dark:via-black dark:to-gray-900 text-gray-700 dark:text-gray-300 transition-all duration-500 py-10">
       {/* === Top Typing Animation (old one) === */}
       <div className="text-center mb-6">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-indigo-300">
@@ -84,7 +84,7 @@ function Hero() {
           <div className="flex gap-5">
             <button
               onClick={goToResume}
-              className="bg-gradient-to-r from-indigo-500 to-blue-500 py-2 px-6 rounded-md text-white font-semibold shadow-lg hover:from-blue-500 hover:to-indigo-500 transition-all duration-300"
+              className="bg-gradient-to-r from-indigo-500 to-blue-500 py-1 px-6 rounded-md text-white font-semibold shadow-lg hover:from-blue-500 hover:to-indigo-500 transition-all duration-300"
             >
               Resume
             </button>
